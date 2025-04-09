@@ -1,5 +1,11 @@
 #include "Actor.h"
 
+Actor::Actor()
+{
+	rootComponent = std::make_shared<SceneComponent>();
+	components.push_back(rootComponent);
+}
+
 void Actor::BeginPlay()
 {
 	for (auto& comp : components)

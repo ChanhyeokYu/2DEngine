@@ -1,5 +1,6 @@
 D:\Microsoft Visual Studio\2DEngine\2DEngine\2DEngine.cpp;D:\Microsoft Visual Studio\2DEngine\2DEngine\x64\Debug\2DEngine.obj
 D:\Microsoft Visual Studio\2DEngine\2DEngine\Actor.cpp;D:\Microsoft Visual Studio\2DEngine\2DEngine\x64\Debug\Actor.obj
 D:\Microsoft Visual Studio\2DEngine\2DEngine\ActorComponent.cpp;D:\Microsoft Visual Studio\2DEngine\2DEngine\x64\Debug\ActorComponent.obj
+D:\Microsoft Visual Studio\2DEngine\2DEngine\SceneComponent.cpp;D:\Microsoft Visual Studio\2DEngine\2DEngine\x64\Debug\SceneComponent.obj
 D:\Microsoft Visual Studio\2DEngine\2DEngine\UObject.cpp;D:\Microsoft Visual Studio\2DEngine\2DEngine\x64\Debug\UObject.obj
 D:\Microsoft Visual Studio\2DEngine\2DEngine\World.cpp;D:\Microsoft Visual Studio\2DEngine\2DEngine\x64\Debug\World.obj
