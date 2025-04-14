@@ -2,6 +2,8 @@
 #include <string>
 #include <memory>
 
+// 모든 객체의 시작점
+
 class UObject
 {
 public:

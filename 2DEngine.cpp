@@ -4,6 +4,7 @@
 #include <iostream>
 #include "World.h"
 #include "Actor.h"
+#include "GameMode.h"
 #include <chrono>
 #include <thread>
 
@@ -26,23 +27,17 @@ class TestActor : public Actor
 int main()
 {
 	auto world = std::make_shared<World>();
-	auto player = std::make_shared<TestActor>();
-	world->AddActor(player);
+	auto gameMode = std::make_shared<GameMode>();
 
+	gameMode->InitGame(world);
+
+	world->SetGameMode(gameMode);
 	world->BeginPlay();
+
 	for (int i = 0; i < 5; i++)
 	{
 		world->Tick(0.016f);
-		std::this_thread::sleep_for(std::chrono::milliseconds(16));
 	}
-
-	auto body = ::make_shared<SceneComponent>();
-	auto weapon = ::make_shared<SceneComponent>();
-
-	weapon->SetPosition(100.f, 100.f);
-	weapon->AttachTo(body);
-
-	player->AddComponent(body);
 
 	world->EndPlay();
 

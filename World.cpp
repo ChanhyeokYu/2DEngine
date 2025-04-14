@@ -28,3 +28,8 @@ void World::EndPlay()
 		actor->EndPlay();
 	}
 }
+
+void World::MoveGameMode()
+{
+
+}

@@ -130,6 +130,9 @@
     <ClCompile Include="2DEngine.cpp" />
     <ClCompile Include="Actor.cpp" />
     <ClCompile Include="ActorComponent.cpp" />
+    <ClCompile Include="GameMode.cpp" />
+    <ClCompile Include="Pawn.cpp" />
+    <ClCompile Include="PlayerController.cpp" />
     <ClCompile Include="SceneComponent.cpp" />
     <ClCompile Include="UObject.cpp" />
     <ClCompile Include="World.cpp" />
@@ -137,6 +140,9 @@
   <ItemGroup>
     <ClInclude Include="Actor.h" />
     <ClInclude Include="ActorComponent.h" />
+    <ClInclude Include="GameMode.h" />
+    <ClInclude Include="Pawn.h" />
+    <ClInclude Include="PlayerController.h" />
     <ClInclude Include="SceneComponent.h" />
     <ClInclude Include="UObject.h" />
     <ClInclude Include="World.h" />
