@@ -2,15 +2,16 @@
 #include "Actor.h"
 #include <vector>
 #include <memory>
+#include "ITickable.h"
 
 class GameMode;
 
-class World
+class World : public ITickable
 {
 public:
 	void AddActor(std::shared_ptr<Actor> actor);
 	void BeginPlay();
-	void Tick(float DeltaTime);
+	virtual void Tick(float DeltaTime) override;
 	void EndPlay();
 
 	std::shared_ptr<GameMode> GetGameMode() { return GlobalGameMode; }

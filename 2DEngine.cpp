@@ -2,44 +2,23 @@
 //
 
 #include <iostream>
-#include "World.h"
-#include "Actor.h"
-#include "GameMode.h"
+#include "Engine.h"
 #include <chrono>
 #include <thread>
 
 using namespace std;
 
-class TestActor : public Actor
-{
-	void BeginPlay() override
-	{
-		GetRootComponent()->SetPosition(100.0f, 200.0f);
-	}
-
-	void Tick(float DeltaTime) override
-	{
-		auto pos = GetRootComponent()->GetPosition();
-		::cout << "TestActor Pos: (" << pos.X << ", " << pos.Y << ")" << endl;
-	}
-};
-
 int main()
 {
-	auto world = std::make_shared<World>();
-	auto gameMode = std::make_shared<GameMode>();
+	Engine::Initialize();
 
-	gameMode->InitGame(world);
-
-	world->SetGameMode(gameMode);
-	world->BeginPlay();
-
-	for (int i = 0; i < 5; i++)
+	while (Engine::IsRunning())
 	{
-		world->Tick(0.016f);
+		Engine::Tick(0.016f);
+		std::this_thread::sleep_for(std::chrono::milliseconds(16));
 	}
 
-	world->EndPlay();
+	Engine::Shutdown();
 
 	return 0;
 

@@ -13,3 +13,7 @@ void GameMode::InitGame(std::shared_ptr<World> world)
 
 }
 
+void GameMode::Tick(float DeltaTime)
+{
+}
+
