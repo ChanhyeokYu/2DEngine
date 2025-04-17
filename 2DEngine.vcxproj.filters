@@ -48,6 +48,12 @@
     <ClCompile Include="Engine.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="INetworkNode.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPSocket.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="UObject.h">
@@ -81,6 +87,12 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Engine.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="INetworkNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPSocket.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
