@@ -15,7 +15,7 @@ public:
 	~TCPSocket();
 
 	bool Initialize();
-	void Shotdown();
+	void Shutdown();
 
 	bool BindAndListen(int port);
 	std::shared_ptr<TCPSocket> Accpet();
