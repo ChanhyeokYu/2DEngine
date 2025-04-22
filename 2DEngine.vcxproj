@@ -134,6 +134,8 @@
     <ClCompile Include="Engine.cpp" />
     <ClCompile Include="GameMode.cpp" />
     <ClCompile Include="INetworkNode.cpp" />
+    <ClCompile Include="NetworkClient.cpp" />
+    <ClCompile Include="NetworkServer.cpp" />
     <ClCompile Include="Pawn.cpp" />
     <ClCompile Include="PlayerController.cpp" />
     <ClCompile Include="SceneComponent.cpp" />
@@ -149,6 +151,8 @@
     <ClInclude Include="GameMode.h" />
     <ClInclude Include="INetworkNode.h" />
     <ClInclude Include="ITickable.h" />
+    <ClInclude Include="NetworkClient.h" />
+    <ClInclude Include="NetworkServer.h" />
     <ClInclude Include="Pawn.h" />
     <ClInclude Include="PlayerController.h" />
     <ClInclude Include="SceneComponent.h" />
