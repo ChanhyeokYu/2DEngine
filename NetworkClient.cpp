@@ -1,5 +1,6 @@
 #include "NetworkClient.h"
 #include <iostream>
+#include "Packet.h"
 
 NetworkClient::NetworkClient()
 {
@@ -50,8 +51,8 @@ void NetworkClient::Tick(float DeltaTime)
     int received = ClientSocket->Receive(buffer, sizeof(buffer));
     if (received > 0)
     {
-        std::string msg(buffer, received);
-        std::cout << "Server: " << msg << std::endl;
+        Packet packet(std::string( buffer, received));
+        std::cout << "Server: " << packet.ToString()<< std::endl;
     }
 }
 
@@ -61,5 +62,6 @@ void NetworkClient::SendMessage(const std::string& msg)
     {
         return;
     }
-    ClientSocket->Send(msg.c_str(), msg.size());
+    Packet packet("Hello");
+    ClientSocket->Send(packet.Data(), packet.Size());
 }
