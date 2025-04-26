@@ -1,9 +1,15 @@
 #include "Actor.h"
+#include "NetworkComponent.h"
 
 Actor::Actor()
 {
 	rootComponent = std::make_shared<SceneComponent>();
 	components.push_back(rootComponent);
+}
+
+Actor::Actor(std::shared_ptr<NetworkComponent> networkComp)
+	: networkComponent(networkComp)
+{
 }
 
 void Actor::BeginPlay()
@@ -30,4 +36,12 @@ void Actor::EndPlay()
 void Actor::AddComponent(std::shared_ptr<ActorComponent> component)
 {
 	components.push_back(component);
+}
+
+void Actor::SendNetworkMessage(const std::string& message)
+{
+	if (networkComponent)
+	{
+		networkComponent->SendMessageNet(message);
+	}
 }

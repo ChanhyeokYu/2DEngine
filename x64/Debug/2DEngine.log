@@ -1,5 +1,4 @@
-﻿  TCPSocket.cpp
-  TickManager.cpp
-  World.cpp
+﻿  Engine.cpp
+  NetworkComponent.cpp
   코드를 생성하고 있습니다...
   2DEngine.vcxproj -> D:\Microsoft Visual Studio\2DEngine\x64\Debug\2DEngine.exe

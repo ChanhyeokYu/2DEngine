@@ -2,15 +2,18 @@
 //
 
 #include <iostream>
-#include "Engine.h"
 #include <chrono>
 #include <thread>
+
+#include "Engine.h"
+
 
 using namespace std;
 
 int main()
 {
 	Engine::Initialize();
+
 
 	while (Engine::IsRunning())
 	{

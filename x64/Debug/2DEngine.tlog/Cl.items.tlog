@@ -4,6 +4,10 @@ D:\Microsoft Visual Studio\2DEngine\2DEngine\ActorComponent.cpp;D:\Microsoft Vis
 D:\Microsoft Visual Studio\2DEngine\2DEngine\Engine.cpp;D:\Microsoft Visual Studio\2DEngine\2DEngine\x64\Debug\Engine.obj
 D:\Microsoft Visual Studio\2DEngine\2DEngine\GameMode.cpp;D:\Microsoft Visual Studio\2DEngine\2DEngine\x64\Debug\GameMode.obj
 D:\Microsoft Visual Studio\2DEngine\2DEngine\INetworkNode.cpp;D:\Microsoft Visual Studio\2DEngine\2DEngine\x64\Debug\INetworkNode.obj
+D:\Microsoft Visual Studio\2DEngine\2DEngine\NetworkClient.cpp;D:\Microsoft Visual Studio\2DEngine\2DEngine\x64\Debug\NetworkClient.obj
+D:\Microsoft Visual Studio\2DEngine\2DEngine\NetworkComponent.cpp;D:\Microsoft Visual Studio\2DEngine\2DEngine\x64\Debug\NetworkComponent.obj
+D:\Microsoft Visual Studio\2DEngine\2DEngine\NetworkServer.cpp;D:\Microsoft Visual Studio\2DEngine\2DEngine\x64\Debug\NetworkServer.obj
+D:\Microsoft Visual Studio\2DEngine\2DEngine\Packet.cpp;D:\Microsoft Visual Studio\2DEngine\2DEngine\x64\Debug\Packet.obj
 D:\Microsoft Visual Studio\2DEngine\2DEngine\Pawn.cpp;D:\Microsoft Visual Studio\2DEngine\2DEngine\x64\Debug\Pawn.obj
 D:\Microsoft Visual Studio\2DEngine\2DEngine\PlayerController.cpp;D:\Microsoft Visual Studio\2DEngine\2DEngine\x64\Debug\PlayerController.obj
 D:\Microsoft Visual Studio\2DEngine\2DEngine\SceneComponent.cpp;D:\Microsoft Visual Studio\2DEngine\2DEngine\x64\Debug\SceneComponent.obj
